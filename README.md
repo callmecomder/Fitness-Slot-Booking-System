@@ -49,3 +49,33 @@ Ensure you have the following installed on your local machine:
 2. Node.js (version 16.x or higher)
 3. npm (or yarn, as per your preference)
 4. Git (to clone the repository)
+
+# Setup Instructions
+   Backend (Django)
+
+1. Clone the repository:
+
+   git clone https://github.com/yourusername/class-booking-management.git
+   cd class-booking-management
+   
+2. Create a virtual environment:
+   
+   python -m venv env
+   source env/bin/activate   # For Linux/Mac
+   env\Scripts\activate      # For Windows
+
+   
+3. Install Python dependencies:
+
+   pip install -r requirements.txt
+
+4. Run database migrations:
+ 
+   python manage.py migrate
+   
+5. Start the Django server:
+   
+   python manage.py runserver
+
+   
+The backend API will be running at http://127.0.0.1:8000.
